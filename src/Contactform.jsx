@@ -1,15 +1,13 @@
 const Contactform = () => {
     return(
-        <div className="min-h-screen flex items-center justify-center bg-green-100  ">
-      <form
-      
-        className="bg-white pl-11 pr-11 pt-8  pb-10 rounded-xl shadow-lg  flex flex-col gap-4  "
+        <div className="min-h-screen flex items-center justify-center bg-green-100  m-auto ">
+      <form className="bg-white pl-11 pr-11 pt-8  pb-10 rounded-xl shadow-lg  flex flex-col gap-4  "
       >
-        <h2 className="text-[30px] font-semibold  ">Contact Us</h2>
+        <h2 className="text-[20px] sm:text-[30px]  font-semibold  ">Contact Us</h2>
               
               {/* first & last name */}
        
-                <div className="flex gap-5 mt-2">
+                <div className="flex flex-col sm:flex-row 2xl:flex-row gap-5 mt-2">
                     <div >
                     <label htmlfor="firstName" className="block mb-1 text-black text-[15px]  ">First Name   *</label>
                     <input type="text" id="firstName" name="firstName" required className="border border-gray-300 rounded-lg  p-[13px] "/>
