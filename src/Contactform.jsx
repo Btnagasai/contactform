@@ -9,21 +9,21 @@ const Contactform = () => {
        
                 <div className="flex flex-col sm:flex-row  gap-5 mt-2">
                     <div >
-                    <label htmlfor="firstName" className="block mb-1 text-black text-[15px]  ">First Name   *</label>
+                    <label htmlfor="firstName" className="block mb-1 text-black text-[15px]  ">First Name   <span className="text-[#0c7d69]">*</span></label>
                     <input type="text" id="firstName" name="firstName" required className="border border-gray-300 rounded-lg  p-[12px] "/>
                     </div>
                     <div>
-                    <label htmlfor="" className="block text-black  mb-1 text-[15px]">Last Name   *</label>
+                    <label htmlfor="" className="block text-black  mb-1 text-[15px]">Last Name   <span className="text-[#0c7d69]">*</span></label>
                     <input type="text" id="lastName" name="lastName" required className="border border-gray-300 rounded-lg  p-[12px] "/>
                     </div>   
                 </div>
                          {/* Email id */}
                 <div className="flex flex-col mt-3 ">
-                        <label htmlfor="Email Address" className="block mb-1 text-black text-[15px]">Email Address  *</label>
+                        <label htmlfor="Email Address" className="block mb-1 text-black text-[15px]">Email Address  <span className="text-[#0c7d69]">*</span></label>
                         <input type="email" id="email" name="email" required className="border border-gray-300 rounded-lg p-[12px]" />
                 </div>
                          {/* Query Type */}
-                <div className=" mt-3">Query Type *</div>
+                <div className=" mt-3">Query Type <span className="text-[#0c7d69]">*</span></div>
                 <div className=" flex flex-col sm:flex-row gap-4 ">
                     
                     {/* General Enquiry */}
@@ -44,14 +44,14 @@ const Contactform = () => {
                 </div>
                         {/* Message */}
                 <div className="flex flex-col mt-2">
-                    <label htmlFor="Message" className="block mb-1 text-black text-sm ">Message  *</label>
+                    <label htmlFor="Message" className="block mb-1 text-black text-sm ">Message  <span className="text-[#0c7d69]">*</span></label>
                     <textarea type="textarea" id="Message" name="Message"  rows="4" required className="border border-gray-300 rounded-lg p-2 "/>
                 </div>
                         {/* checkbox */}
                 <div className="flex items-center mt-6 ">
                    
                     <input type="checkbox" className="input-checkbox w-[16px] h-[16px] mr-5 font-medium"/>
-                    <label htmlFor="checkBox">I consent to being contacted by the team *</label>
+                    <label htmlFor="checkBox">I consent to being contacted by the team <span className="text-[#0c7d69]">*</span></label>
                 </div>
                         {/* submit button */}
                 <button type="submit" className="mt-6 w-full p-5 bg-[#0c7d69] text-white text-[15px] rounded-lg">Submit</button>
