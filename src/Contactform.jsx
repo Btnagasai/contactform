@@ -1,7 +1,7 @@
 const Contactform = () => {
     return(
         <div className="min-h-screen flex items-center justify-center bg-green-100  m-auto ">
-      <form className="bg-white pl-11 pr-11 pt-8  pb-10 rounded-xl shadow-lg  flex flex-col gap-4  "
+      <form className="bg-white sm:pl-11 sm:pr-11 sm:pt-8  sm:pb-10  pl-5 pr-5 pt-4 pb-5 m-10 rounded-xl shadow-lg  flex flex-col gap-4 font-karla  "
       >
         <h2 className="text-[20px] sm:text-[30px]  font-semibold  ">Contact Us</h2>
               
@@ -13,7 +13,7 @@ const Contactform = () => {
                     <input type="text" id="firstName" name="firstName" required className="border border-gray-300 rounded-lg  p-[13px] "/>
                     </div>
                     <div>
-                    <label htmlfor="" className="block text-black  mb-1 text-sm">Last Name   *</label>
+                    <label htmlfor="" className="block text-black  mb-1 text-[15px]">Last Name   *</label>
                     <input type="text" id="lastName" name="lastName" required className="border border-gray-300 rounded-lg  p-[13px] "/>
                     </div>   
                 </div>
@@ -28,17 +28,17 @@ const Contactform = () => {
                     
                     {/* General Enquiry */}
                         
-                        <div class="flex space-x-4 border border-gray-300 rounded-lg w-full p-3 items-center">
-                        <label className="flex item-center">
-                            <input type="radio" name="queryType" value="General Enquiry" className=" radio-input  w-[20px] h-[20px] mr-3 ml-[11px] font-[8px] rounded-lg"/>General Enquiry
-                        </label>
+                        <div class="flex   border border-gray-300 rounded-lg w-full p-3 items-center">
+                       
+                            <input type="radio" name="queryType" value="General Enquiry" className=" radio-input  w-[15px] h-[15px] mr-3 ml-[11px] font-[8px] rounded-lg"/>
+                            <label className="flex item-center">General Enquiry </label>
                    
                     </div>
                             {/* Support Request */}
-                        <div class="flex space-x-4 border border-gray-300 rounded-lg w-full p-3 items-center">
-                        <label className="flex item-center">
-                            <input type="radio" name="queryType" value="Support Request" className=" radio-input  w-[20px] h-[20px] mr-3 ml-[11px] font-[8px] rounded-lg"/>Support Request
-                        </label>
+                        <div class="flex  border border-gray-300 rounded-lg w-full p-3 items-center">
+                        
+                            <input type="radio" name="queryType" value="Support Request" className=" radio-input  w-[15px] h-[15px] mr-3 ml-[11px] font-[8px] rounded-lg"/>
+                            <label className="flex item-center">Support Request</label>
                    
                     </div>
                 </div>
@@ -49,10 +49,9 @@ const Contactform = () => {
                 </div>
                         {/* checkbox */}
                 <div className="flex items-center mt-6 ">
-                    <label htmlFor="checkBox">
+                   
                     <input type="checkbox" className="input-checkbox w-[16px] h-[16px] mr-5 font-medium"/>
-                    I consent to being contacted by the team *
-                    </label>
+                    <label htmlFor="checkBox">I consent to being contacted by the team *</label>
                 </div>
                         {/* submit button */}
                 <button type="submit" className="mt-6 w-full p-5 bg-[#0c7d69] text-white text-[15px] rounded-lg">Submit</button>
